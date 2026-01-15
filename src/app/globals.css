@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
-/* Ajustes adicionales para tu fondo negro */
 :root {
   --background: 0 0 0;
   --foreground: 255 255 255;
+}
+
+/* --- ESTA ES LA SOLUCIÓN --- */
+html {
+  scroll-behavior: smooth;      /* Hace que baje suavemente */
+  scroll-padding-top: 5rem;     /* Frena un poco antes para que el menú no tape el título */
 }
 
 body {
   background: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;           /* Evita que se mueva para los costados en celular */
 }
